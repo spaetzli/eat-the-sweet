@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8" />
+    <title>Eat the SWEET!</title>
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/fontfaces.css" />
+    <link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
+    
+    <script src="scripts/modernizr.js"></script>
+    <script src="scripts/loader.js"></script>
+    <script type="text/javascript" src="scripts/mechanics/Player.js"></script>
+	<script type="text/javascript" src="scripts/mechanics/Background.js"></script>
+	<script type="text/javascript" src="scripts/mechanics/Particle.js"></script>
+	<script type="text/javascript" src="scripts/mechanics/Cloud.js"></script>
+	<script type="text/javascript" src="scripts/mechanics/Cookie.js"></script>
+	<script type="text/javascript" src="scripts/mechanics/BackgroundCloud.js"></script>
+    <script type="text/javascript" src="scripts/mechanics/Main.js"></script>
+	<script type="text/javascript" src="scripts/mechanics/ShootingStar.js"></script>
+</head>
+
+<body>
+	<div id="game">
+    	<div class="screen" id="main-menu">
+        	<h1 class="logo">EAT</h1> 
+            <h1 class="logo">the </h1>
+            <h1 class="logo">SWEET!</h1>
+            
+            <div id="border"></div>
+            
+            <div id="menu">
+            	<span class="button" id="play-game">Play!</span><br/>
+            	<span class="button" id="how-to-play">How to play</span>
+            </div>
+        </div>
+        
+        <div class="screen" id="instructions">
+			<h2 id="top">How to PLAY (PC)</h2>
+            <p id="body">
+				<p>Pocky moves in the direction of your cursor - drag your mouse accordingly! To launch him initially, left-click your mouse.</p>
+				<p>The objective is to move Pocky along by making him bounce on clouds and advance further up into the sky. 
+				Your score is measured by how high you can go, plus the number of bonus goodies you feed him along the way.</p>
+				<p>Can you help Pocky reach the very top of the sky for his ultimate dream prize?</p>
+				<div class="column">
+				<img src="images/cookie.png" class="resize" alt=""> : 50 points<br />
+				<img src="images/candy.png" class="resize" alt=""> : 100 points<br />            
+				</div>
+				<div class="column">
+				<img src="images/cupcake.png" class="resize" alt=""> : 200 points<br />
+				<img src="images/star.png" class="resize" alt=""> : ???<br />
+				</div>
+								
+				<p id="clear">
+					To toggle the sound, press M.<br />
+					To quit playing, press the ESC key.<br />
+					To pause, press the SPACE BAR.<br />
+				</p>
+            </p>
+			<span id="back-button">Back</span>
+		</div>		
+        
+        <div class="screen" id="game-screen">
+        	<canvas id="canvas">GAME STUFF</canvas>
+        </div>
+        <div class="screen" id="high-scores"></div>
+	</div>
+</body>
+
+</html>

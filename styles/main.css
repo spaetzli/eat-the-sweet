@@ -1,0 +1,121 @@
+/****MAIN STUFF****/
+body {
+	margin:0;
+	background: #7ed1e4;
+}
+
+#game {
+	font-family:'VanillaRegular';
+	position:relative;
+	width:480px;
+	height:720px;
+	margin: 60px auto;
+	background-image: -webkit-gradient(
+		linear,
+		left bottom,
+		left top,
+		color-stop(0.28, #065983),
+		color-stop(0.85, #96D1E0));
+	color:#fff;
+	border: 2px solid #fff;
+}
+#game .screen {
+	position:absolute;
+	width:100%;
+	height:100%;
+	display:none;
+	z-index:10;
+}
+#game .screen.active {
+	display:block;
+}
+
+/****THE SPLASH SCREEN****/
+#main-menu {
+	text-align:center;
+	padding-top:100px;
+}
+
+#border {
+	background-image:url(../images/candy.png);
+	background-repeat:repeat-x;
+	height:60px;
+	width:440px;
+	margin:30px auto;
+}
+
+#menu {
+	margin-top:75px;	
+}
+#menu .button {
+	line-height:80px;
+	cursor:pointer;
+	padding:15px 50px;
+	background-color:#faade1;
+	border-radius:5px;
+	border:4px solid #9F9;
+	font-size:18px;
+}
+
+.logo {
+	font-family:'JuneBugRegular';
+	font-size:500%;
+	line-height:25px;
+	margin:0;
+	text-align:center;
+	color:#fff;
+	text-shadow: 1px 1px #fff, -1px -1px #000;
+}
+.logo:first-line {
+	font-size:55px;
+	line-height:55px;
+}
+
+#play-game,
+#how-to-play,
+#back-button {
+	text-shadow: 1px 1px 0 #777;
+}
+
+/****THE INSTRUCTIONS SCREEN****/
+#top {
+	padding-left:20px;
+	padding-top:20px;
+	text-shadow: 1px 2px #000;
+}
+p {
+	font-family: "Fredoka One", cursive;
+	padding-left:1em;
+	padding-right:1em;
+	font-size:13.5pt;
+	word-wrap:normal;
+	text-shadow: 1px 1px 0 #555;
+}
+
+.column {
+	float:left;
+	padding-left:10px;
+	margin-bottom:25px;
+}
+.resize {		
+	width:55px;
+	height:auto;	
+	margin-top:15px;
+	margin-left:10px;
+}
+
+p#clear {
+	clear: both;
+}
+
+#back-button {
+	cursor:pointer;
+	padding:15px 50px;
+	background-color:#faade1;
+	border-radius:5px;
+	border:4px solid #9F9;
+	font-size:18px;	
+	position:absolute;
+	right:20px;
+	bottom:20px;
+}
