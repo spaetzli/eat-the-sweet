@@ -114,6 +114,8 @@ function init()
 				cursor.y = e.clientY + 
 				(de.scrollTop || b.scrollTop) - (de.clientTop || 0);
 			}	
+
+			cursor.x += (CANVAS_WIDTH - window.innerWidth) * 0.5;
 	});
 	
 	document.getElementById("canvas").addEventListener("mousedown",function(e) {
